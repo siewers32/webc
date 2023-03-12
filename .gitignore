@@ -1,3 +1,5 @@
+# output dir
+/docs
 # Logs
 logs
 *.log
