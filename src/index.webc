@@ -25,6 +25,8 @@ layout: layout.webc
 <theme-select></theme-select>
 <card-element></card-element>
 <script defer src="card-element.js"></script>
+
+<div id="#bla">Bla divje</div>
 <template webc:is="footer" webc:type="11ty" 11ty:type="md">
     See this [code on GitHub](https://github.com/11ty/demo-webc-counter).
 

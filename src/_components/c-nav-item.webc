@@ -1,6 +1,10 @@
-<a :href="url" @html="title">He what!!</a>
+<a id="foo" :href="url" @html="title">He what!!</a>
+<input id="bla" type="number" value="0">
 
 <style webc:scoped>
+    :host {
+        background-color: orange;
+    }
     a {
         display:block;
         height:200px;
@@ -13,6 +17,15 @@
         connectedCallback() {
             // let tmpl = this.querySelector("template");
             // tmpl.replaceWith(tmpl.content);
+            // console.log(this.querySelector("#bla").innerHTML)
+            let bla = this.querySelector("#bla")
+            let v = bla.value
+            bla.addEventListener("click", () => {
+                v++;
+                foo.innerText = v;
+                bla.value = v;
+            })
+
         }
     })
 </script>
