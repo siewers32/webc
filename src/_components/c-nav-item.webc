@@ -1,0 +1,18 @@
+<a :href="url" @html="title">He what!!</a>
+
+<style webc:scoped>
+    a {
+        display:block;
+        height:200px;
+        background-color: aqua;
+    }
+</style>
+
+<script>
+    window.customElements.define("c-nav-item", class extends HTMLElement {
+        connectedCallback() {
+            // let tmpl = this.querySelector("template");
+            // tmpl.replaceWith(tmpl.content);
+        }
+    })
+</script>

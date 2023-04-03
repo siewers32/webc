@@ -1,6 +1,8 @@
 ---
 layout: layout.webc
+title: JanJaap
 ---
 <h1>Hallo</h1>
 <site-footer></site-footer>
 <p>Blaberdie</p>
+# {{ title }}

@@ -4,7 +4,7 @@ const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 
 module.exports = function(eleventyConfig) {
 	eleventyConfig.addPlugin(pluginWebc, {
-        components: "src/_includes/*.webc"
+        components: "src/_components/*.webc"
     });
 
     eleventyConfig.addPlugin(EleventyRenderPlugin);

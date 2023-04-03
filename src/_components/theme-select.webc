@@ -1,0 +1,25 @@
+<!-- theme-select.webc -->
+<template>
+    <button>Light</button>
+    <button>System</button>
+    <button>Dark</button>
+</template>
+
+<style webc:keep>
+    theme-select {
+        body: blue;
+    }
+</style>
+
+<script webc:keep>
+    class ThemeSelect extends HTMLElement {
+        connectedCallback() {
+            const template = this.querySelector("template");
+            // Swap out the template with its contents so they become visible
+            
+            template.replaceWith(template.content);
+        }
+    }
+    customElements.define("theme-select", ThemeSelect);
+</script>
+

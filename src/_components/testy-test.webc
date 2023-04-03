@@ -1,0 +1,24 @@
+BlaberdieBlabBla
+
+<template>
+    <h1 @html="name"></h1>
+    <a href=":name" @html='name'>What</a>
+    <button>Hello</button>
+    <h1>This gets connected. Lekker bezig hoor!</h1>
+    <slot name="description">De description is hier</slot>
+</template>
+
+<style webc:scoped>
+    button {
+        background-color: purple
+    }
+</style>
+
+<script>
+    window.customElements.define("testy-test", class extends HTMLElement {
+        connectedCallback() {
+            let tmpl = this.querySelector("template");
+            tmpl.replaceWith(tmpl.content);
+        }
+    })
+</script>

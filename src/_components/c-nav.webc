@@ -1,0 +1,22 @@
+Navigation
+<div>
+    <slot></slot>
+</div>
+
+<!-- style webc:scoped -->
+<style webc:scoped>
+    div {
+        display: flex;
+        justify-content: space-between;
+        background-color: purple;
+    }
+</style>
+
+<script>
+    window.customElements.define("c-nav", class extends HTMLElement {
+        connectedCallback() {
+            // let tmpl = this.querySelector("template");
+            // tmpl.replaceWith(tmpl.content);
+        }
+    })
+</script>

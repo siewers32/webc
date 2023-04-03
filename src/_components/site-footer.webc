@@ -1,4 +1,5 @@
-<p>Hello i am a component</p>
+<slot><p>Hello i am a component</p></slot>
+
 <style webc:scoped>
   :host {
     color:purple;

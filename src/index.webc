@@ -2,4 +2,32 @@
 layout: layout.webc
 ---
 <h1>Hallo</h1>
-<site-footer></site-footer>
+<form method="get">
+    <button type="submit">Submit</button>
+    <my-counter @name="third" @value="6"></my-counter>
+    <my-counter @name="fourth" @value="10"></my-counter>
+
+</form>
+<c-nav>
+    <c-nav-item @url="bla" @title="Where are we going"></c-nav-item>
+    <c-nav-item @url="bla" @title="Yo, where are we going"></c-nav-item>
+    <c-nav-item @url="bla" @title="Ho, where are we going"></c-nav-item>
+</c-nav>
+
+<div>
+    Dit is gewoon een divje
+</div>
+
+<testy-test @name="Hello Testy" @value="Blaberide">
+    blaberdiehopsasa
+    <span slot="description">This is how we do it!!</span>
+</testy-test>
+<theme-select></theme-select>
+<card-element></card-element>
+<script defer src="card-element.js"></script>
+<template webc:is="footer" webc:type="11ty" 11ty:type="md">
+    See this [code on GitHub](https://github.com/11ty/demo-webc-counter).
+
+    _This was originally a demo for a talk given at the [Eleventy Meetup: Adding Components to WebC with
+    Eleventy](https://www.zachleat.com/web/webc-in-eleventy/)._
+</template>
